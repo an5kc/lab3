@@ -1,0 +1,49 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map-canvas, #map_canvas {
+  height: 100%;
+}
+
+@media print {
+  html, body {
+    height: auto;
+  }
+
+  #map-canvas, #map_canvas {
+    height: 650px;
+  }
+}
+
+#panel {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  margin-left: -160px;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  
+}
+
+
+      #map-canvas {
+        margin-right: 0px;
+      }
+
+      
+
+      @media print {
+        #map-canvas {
+          height: 500px;
+          margin: 0;
+        }
+
+        #directions-panel {
+          float: none;
+          width: auto;
+        }
+      }
